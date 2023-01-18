@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: #010615;
+}
+.navbar{
+    width:  1200px;
+    height: 75px;
+    margin:auto;
+
+}
+.icon{
+    width:  200px;
+    float: left;
+    height: 75px;
+
+}
+.logo{
+    color: #ff720f;
+    font-size: 35px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    padding-top: 25px;
+    float:left;
+}
+.menu{
+    width: 400px;
+    float:left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:#ff720f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+.search{
+    width: 330px;
+    float: right;
+    margin-right: 5px;
+    padding-top: 20px;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 2px sloid #ff720f;
+    margin-top: 13px;
+    color: #ff720f;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff720f;
+    border: 2px solid #000000;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+.content .para{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    margin-top: 3%;
+    line-height: 30px;
+}
+.content h1{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+
+}
+.content h1 span{
+    color: #ff720f;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about content span{
+    color: #ff720f;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-size: medium;
+
+}
+.about .para p{
+    color: #fff;
+    font-size: large;
+
+}
+.about .para span{
+    color: #ff720f;
+    text-emphasis-style: bold;
+    font-style: oblique;
+    font-size: large;
+}
+.about .inte{
+    margin-top: 1%;
+    color: #fff;
+    font-size: large;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+.about .inte li{
+    padding-top: 10px;
+    color: #fff;
+    font-size: large;
+    padding-left: 30px;
+}
+.card{
+    margin-top: 2%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-position: center;
+    border: 2px solid #ff720f;
+}
+.card1{
+    margin-top: 2%;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 25px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 45px 45px;
+    background-position: center;
+    border: 2px solid #ff720f;
+    position:relative;    
+}
+.card1:hover::after{
+    width: 100%;
+}
+.card1 h5{
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: x-large;
+}
+.card:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: #ff720f;
+    z-index: -1;
+}
+.card:hover{
+    border-color: #ff720f;
+    background-color: #ff720f;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card:hover::after{
+    width: 100%;
+}
+.card h5{
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: x-large;
+}
+.c1 h1{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 2%;
+}
+.c1 h1 span{
+    color: #ff720f;
+}
+.c2 h1{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    margin-top: 3%;
+}
+.c2 h1 span{
+    color: #ff720f;
+}
+.con1 h1{
+    color: #fff;
+    padding-left: 20px;
+    margin-top: 4%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.con1 li{
+    padding-top: 20px;
+    color: #fff;
+    font-size: large;
+    padding-left: 40px;
+}
+.con1 span{
+    color: #ff720f;
+}
+.p1 h1{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 3%;
+}
+.p1 h1 span{
+    color: #ff720f;
+}
+.footer{
+    margin-top: 9%;
+    margin: center;
+    color: #fff;
+    text-align: center;
+    padding-left: 2%;
+}
+.footer h1{
+    padding-bottom: 2%;
+}
+.footer span{
+    color: #ff720f;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(254, 254, 254, 0.9), #ff720f);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h4{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: large;
+}
+.card1:before .layer{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: #ff720f;
+    z-index: -1;
+}
+.card1:hover .layer{
+   height:100%;
+}
